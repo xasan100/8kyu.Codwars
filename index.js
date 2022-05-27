@@ -40,3 +40,57 @@ var stringToNumber = function(str){
 var stringToNumber = function(str){
   return +str;
 }
+
+
+// 8 kyu
+
+JavaScript:
+function smash (words) {
+   return words.join(' ')
+};
+
+// 8 kyu
+// Jenny's secret message
+JavaScript:
+function greet(name){
+  var one = name.padStart(9,'hello ')
+    one=    name.padStart(10,'hello ')
+      one = name.padStart(12,'hello ')
+     one = "Hello, " + name + "!";
+     if(name === "Johnny")
+       one = "Hello, my love!";
+  return one
+    }
+
+// 8 kyu
+// Count of positives / sum of negatives
+// JavaScript:
+
+function countPositivesSumNegatives(input) {
+  if (!input || input.length === 0) return []
+
+  const positives = input
+    .filter(number => Math.sign(number) === 1)
+    .reduce(a => a + 1, 0)
+
+  const negatives = input
+    .filter(number => Math.sign(number) === -1)
+    .reduce((a, b) => a + b, 0)
+
+  return [positives, negatives]
+}    
+
+
+// 8 kyu
+// Remove String Spaces
+JavaScript:
+function noSpace(x){
+ return x.split(' ').join('')
+}
+
+// 8 kyu
+// Reversed Words
+JavaScript:
+function reverseWords(str){
+     return str.split(' ').reverse( ).join(` `)
+  }
