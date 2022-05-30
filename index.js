@@ -94,3 +94,42 @@ JavaScript:
 function reverseWords(str){
      return str.split(' ').reverse( ).join(` `)
   }
+
+//   8 kyu
+// Beginner - Reduce but Grow
+// JavaScript:
+function grow(x){
+  var arr = x.reduce( (a, b)=> {
+    return a*b
+})
+return arr
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// A Needle in the Haystack
+JavaScript:
+function findNeedle(haystack) {
+  let newIndex = haystack.indexOf('needle')
+  return `found the needle at position ${newIndex}`
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// Convert a Boolean to a String
+JavaScript:
+function booleanToString(b){
+  return b.toString()
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// Even or Odd
+JavaScript:
+function even_or_odd(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd'
+}
+// 2 months agoRefactorDiscuss
+// 8 kyu
+// Multiply
+JavaScript:
+function multiply(a, b){
+  return a * b
+}
