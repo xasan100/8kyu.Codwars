@@ -133,3 +133,149 @@ JavaScript:
 function multiply(a, b){
   return a * b
 }
+
+// 6 kyu
+// Who likes it?
+// JavaScript:
+function likes(names) {
+    if (names.length == 0) return `no one likes this`
+    if (names.length == 1) return  `${names[0]} likes this`
+    if (names.length == 2) return `${names[0]} and ${names[1]} like this`
+    if (names.length == 3) return `${names[0]}, ${names[1]} and ${names[2]} like this`
+    if (names.length >= 4) return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
+};
+// last monthRefactorDiscuss
+// 8 kyu
+// String repeat
+JavaScript:
+function repeatStr (n, s) {
+    return s.repeat(n)
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// Remove First and Last Character
+JavaScript:
+function removeChar(str){
+return str.slice(1,-1)
+
+};
+
+
+
+// last monthRefactorDiscuss
+// 8 kyu
+// Return Negative
+// JavaScript:
+function makeNegative(num) {
+  if(num === 0) {
+    return 0
+  }
+  return -Math.abs(num)
+} 
+// last monthRefactorDiscuss
+// 5 kyu
+// Simple Pig Latin
+JavaScript:
+function pigIt(str){
+ return str.replace(/(\w)(\w*)(\s|$)/g, "\$2\$1ay\$3")
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// Basic Mathematical Operations
+JavaScript:
+function basicOp(operation, value1, value2)
+{
+  return eval(`${value1} ${operation} ${value2}`)
+}
+// last monthRefactor
+function basicOp(operation, value1, value2){
+  if(operation == '+') return value1 + value2
+  if(operation == '-') return value1 - value2
+  if(operation == '*') return value1 * value2
+  if(operation == '/') return value1 / value2
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// Sum of positive
+JavaScript:
+function positiveSum(arr) {
+  let result = 0;
+  arr = arr.filter((v) => v > 0);
+  arr.length > 0 ? arr.map((v) => (result += v)) : result = 0
+  return result;
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// String cleaning
+JavaScript:
+function stringClean(s){
+  return s.replace(/[0-9]/g, "");
+}
+// last monthRefactor
+// 8 kyu
+// Convert number to reversed array of digits
+JavaScript:
+function digitize(n) {
+  var b = n
+    .toString()
+    .split("")
+    .map((v) => +v)
+    .reverse();
+
+  return b;
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// Convert boolean values to strings 'Yes' or 'No'.
+JavaScript:
+function boolToWord( bool ){
+  return bool ?   'Yes':'No'
+}
+// last monthRefactorDiscuss
+// 6 kyu
+// Counting Duplicates
+JavaScript:
+function duplicateCount(text){
+
+  return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+}
+// last monthRefactorDiscuss
+// 8 kyu
+// Simple multiplication
+JavaScript:
+function simpleMultiplication(number) {
+return number % 2 == 0 ? number * 8 : number * 9;
+}
+// last monthRefactor
+// 6 kyu
+// Your order, please
+JavaScript:
+function order(words){
+ return words.split(' ').sort(function (a, b) {
+        return a.match(/\d/) - b.match(/\d/);
+    }).join(' ');
+}
+// last monthRefactorDiscuss
+// 7 kyu
+// List Filtering
+JavaScript:
+function filter_list(l) {
+    return l.filter(v => typeof v == 'number');
+}
+console.log(filter_list([1, 'a', 'b', 0, 15]));
+// last monthRefactorDiscuss
+// 8 kyu
+// Square(n) Sum
+JavaScript:
+function squareSum(numbers) {
+    return eval(numbers.map((n) => n * n).join(' + ')) || 0
+}
+console.log(squareSum([0]));
+// last monthRefactorDiscuss
+// 8 kyu
+// MakeUpperCase
+JavaScript:
+function makeUpperCase(str) {
+
+return  str.toString().toUpperCase()
+}
